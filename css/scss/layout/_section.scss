@@ -1,22 +1,19 @@
 main {
   @extend %flex;
-  margin-top: 50px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 30px;
+  h3 {
+    margin: 0;
+
+  }
 }
 
 
 .gallery {
-  // flex: 1 100%;
   @extend %flex;
   flex-wrap: wrap;
   justify-content: center;
-  // @media screen and (max-width: $desktop) {
-  //   width: 98%;
-  //   justify-content: center;
-  //   // flex-direction: column;
-  //   margin:auto;
-  // }
 }
 
 .gallery-item {
@@ -27,7 +24,7 @@ main {
   max-width: 150px;
   justify-content: center;
   img {
-    margin: auto;
+    margin: 5px auto;
     flex: 1 100%
     }
     span {
@@ -44,5 +41,20 @@ main {
     font-size: 2em;
     i {
       margin: 0 50px;
+
     }
   }
+
+
+  h1 {
+    font-family: $font-logo;
+    font-size: 2.9em;
+    font-weight: lighter;
+    letter-spacing: .02em;
+    margin: 0;
+    }
+    .logo-color {
+      color: #AC884C;
+      font-family: $font-logo;
+
+    }
