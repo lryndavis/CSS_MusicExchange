@@ -1,0 +1,41 @@
+header {
+  @extend %flex;
+  width: 100%;
+  flex-flow: row wrap;
+}
+
+nav {
+  @extend %flex;
+  align-items: flex-start;
+  align-items: center;
+  flex: 1 100%;
+  justify-content: space-around;
+  img {
+    margin-right: 15px;
+  }
+  ul {
+    @extend %flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin: 0;
+    li {
+      margin: 20px;
+      list-style: none;
+    }
+  }
+}
+
+.search-nav {
+  @extend %flex;
+  flex: 1 100%;
+  background: #222;
+  padding: 10px;
+  justify-content: space-between;
+  form {
+    margin: auto;
+    align-self: center;
+  }
+  a {
+    align-self: flex-end;
+  }
+}

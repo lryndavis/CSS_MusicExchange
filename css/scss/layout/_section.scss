@@ -1,0 +1,48 @@
+main {
+  @extend %flex;
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.gallery {
+  // flex: 1 100%;
+  @extend %flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // @media screen and (max-width: $desktop) {
+  //   width: 98%;
+  //   justify-content: center;
+  //   // flex-direction: column;
+  //   margin:auto;
+  // }
+}
+
+.gallery-item {
+  margin: 2%;
+  flex-direction: column;
+  display: flex;
+  flex: 1 20%;
+  max-width: 150px;
+  justify-content: center;
+  img {
+    margin: auto;
+    flex: 1 100%
+    }
+    span {
+      display: block;
+      font-size: .8em;
+    }
+    h4 {
+      margin: 0;
+    }
+  }
+
+  .chevron {
+    margin-top: 50px;
+    font-size: 2em;
+    i {
+      margin: 0 50px;
+    }
+  }
