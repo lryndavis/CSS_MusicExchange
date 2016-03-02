@@ -1,14 +1,15 @@
 * {
   box-sizing: border-box;
   font-family: $font-primary;
+  font-weight: 100;
 }
 
 body {
-  background: #000;
-  color: #ccc;
+  background: $background-color;
+  color: $font-color--secondary;
 }
 
 a {
   text-decoration: none;
-  color: #AC884C;
+  color: $color-accent--font;
 }

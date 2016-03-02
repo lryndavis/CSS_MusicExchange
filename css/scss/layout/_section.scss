@@ -5,10 +5,8 @@ main {
   margin-top: 30px;
   h3 {
     margin: 0;
-
   }
 }
-
 
 .gallery {
   @extend %flex;
@@ -26,35 +24,33 @@ main {
   img {
     margin: 5px auto;
     flex: 1 100%
-    }
-    span {
-      display: block;
-      font-size: .8em;
-    }
-    h4 {
-      margin: 0;
-    }
   }
-
-  .chevron {
-    margin-top: 50px;
-    font-size: 2em;
-    i {
-      margin: 0 50px;
-
-    }
+  span {
+    display: block;
+    font-size: .8em;
   }
-
-
-  h1 {
-    font-family: $font-logo;
-    font-size: 2.9em;
-    font-weight: lighter;
-    letter-spacing: .02em;
+  h4 {
     margin: 0;
-    }
-    .logo-color {
-      color: #AC884C;
-      font-family: $font-logo;
+  }
+}
 
-    }
+.chevron {
+  margin-top: 50px;
+  font-size: 2em;
+  i {
+    margin: 0 50px;
+  }
+}
+
+
+h1 {
+  font-family: $font-logo;
+  font-size: 2.9em;
+  font-weight: lighter;
+  letter-spacing: .02em;
+  margin: 0;
+}
+.logo-color {
+  color: $color-accent--font;
+  font-family: $font-logo;
+}

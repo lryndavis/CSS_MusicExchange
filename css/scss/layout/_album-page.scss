@@ -1,0 +1,48 @@
+.album-info {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  .alb-img {
+    @extend %flex;
+    flex: 1;
+    align-items: center;
+    max-width: 100%;
+    margin-right: 50px;
+
+    @media screen and(max-width: $tablet) {
+      flex-direction: column;
+      flex: 1 100%;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .album-meta {
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    color: $font-color--secondary;
+    padding: 15px 15px 15px 50px;
+    border-left: 2px solid $color-accent;
+    h2:first-child {
+      margin-top: 0;
+    }
+  }
+  .rating {
+    flex-direction: column;
+    display: flex;
+    flex: 1 100%;
+    h2 {
+      margin-top: 20px;
+    }
+    input {
+      margin-right: 30px;
+    }
+    .album-rate {
+      align-self: flex-start;
+      margin: 0;
+    }
+  }
+}
